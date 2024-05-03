@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bunny Raiders, Inspired by Space Invaders</title>
+    <title>Bunny Raiders</title> <!--This is what is displayed in the tab where the game is-->
     <link rel="shortcut icon" href="#" />
     <style>
       canvas {
@@ -33,8 +33,17 @@
   </head>
   <body>
     <h1>Bunny Raiders, Inspired by Space Invaders</h1>
-    <h2>Controls: Arrow Keys are used to move. Shoot carrots at the other bunnies with the spacebar.</h2>
+    <h2>Controls: Arrow Keys are used to move. Shoot carrots at the other bunnies with the space bar.</h2>
+    <script src="BulletCounter.js"></script>
     <canvas id="game"></canvas>
-    <script type="module" src="index.js"></script>
-  </body>
+    <script type="module" src="index.js"></script> 
+    <!-- Element to display spacebar press count -->
+<p>You have shot these many carrots: <span id="spacebarCount">0</span></p>
+<p>The song is "Galaxy Guppy" by ko0x.</p>
+    <audio controls autoplay muted loop>
+        <source src ="sounds/chiptune-song.mp3"> 
+        <!-- Autoplays copyright-free song titled "Galaxy Guppy" by ko0x
+        but the audio is muted and user has to manually unmute. The song is looped.-->
+    </audio>
+</body>
 </html>

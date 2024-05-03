@@ -3,10 +3,10 @@ export default class Enemy {
       this.x = x;
       this.y = y;
       this.width = 44;
-      this.height = 32;
+      this.height = 32; //Sets the width and height to the dimensions of the images used.
   
       this.image = new Image();
-      this.image.src = `images/enemy${imageNumber}.png`;
+      this.image.src = `images/enemy${imageNumber}.png`; // ${imageNumber} borrows the pictures for the different enemies but uses different numbered ones.
     }
   
     draw(ctx) {

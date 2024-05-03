@@ -134,10 +134,10 @@ export default class EnemyController {
   createEnemies() {
     this.enemyMap.forEach((row, rowIndex) => {
       this.enemyRows[rowIndex] = [];
-      row.forEach((enemyNubmer, enemyIndex) => {
-        if (enemyNubmer > 0) {
+      row.forEach((enemyNumber, enemyIndex) => {
+        if (enemyNumber > 0) {
           this.enemyRows[rowIndex].push(
-            new Enemy(enemyIndex * 50, rowIndex * 35, enemyNubmer)
+            new Enemy(enemyIndex * 50, rowIndex * 35, enemyNumber)
           );
         }
       });
